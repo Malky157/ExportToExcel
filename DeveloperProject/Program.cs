@@ -43,8 +43,7 @@ namespace DeveloperProject
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             var excel = new ExcelPackage();
 
-            excel.Workbook.Properties.Title = fileName;
-            excel.Workbook.Properties.Subject = "Integra Project";
+            excel.Workbook.Properties.Title = fileName;           
             excel.Workbook.Properties.Created = DateTime.Now;
 
             var workSheet = excel.Workbook.Worksheets.Add("Sheet1");
